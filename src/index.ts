@@ -1,5 +1,5 @@
 //hecho por Aloisi Matias, Jesus Gattorossi, Gaston Montenegro.
-
+/*
 let producto1 = prompt("ingresar el nombre del producto");
 let producto2 = prompt("ingresar el nombre del segundo producto");
 let producto3 = prompt("ingresar el nombre del tercer producto");
@@ -31,7 +31,20 @@ let precioTotal: number = calculo1 + calculo2 + calculo3;
 let stockRestante1: number = stock1 - compra1;
 let stockRestante2: number = stock2 - compra2;
 let stockRestante3: number = stock3 - compra3;
+while (compra1 <= 0) {
+  console.log("numero invalido");
+  compra1 = Number(prompt(`cuantas ${producto1} desea llevar?`));
+}
 
+while (compra2 <= 0) {
+  console.log("numero invalido");
+  compra2 = Number(prompt(`cuantas ${producto2} desea llevar?`));
+}
+
+while (compra3 <= 0) {
+  console.log("numero invalido");
+  compra3 = Number(prompt(`cuantas ${producto3} desea llevar?`));
+}
 if (compra1 > stock1 && compra2 > stock2 && compra3 > stock3) {
   console.log(`no tenemos stock suficiente para su pedido, intente de vuelta`);
 } else {
